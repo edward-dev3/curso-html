@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de HTML con Multimedia</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Multimedia en HTML</h1>
+    </header>
+    <section class="audio">
+        <h2>Audio1</h2>
+        <audio controls loop>
+            <source src="./sources/audio.mp3" type="audio/mpeg">
+            <source src="./sources/audio.ogg" type="audio/ogg; codec=opus">
+            Lo sentimos. TU navegador no soporta el formato de audio.
+        </audio>
+    </section>
+    <section class="video">
+        <h2>Video</h2>
+        <video controls width="400">
+            <source src="./sources/video.mp4" type="video/mp4">
+        </video>
+    </section>
+    <section class="iframe">
+        <h2>iframe</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/QXC_0GHYYuo?si=pZu7zwCJfz0ydfcz"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </section>
+</body>
+
+</html>
